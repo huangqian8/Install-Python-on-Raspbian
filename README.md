@@ -1,6 +1,6 @@
 # Install-Python-on-Raspbian
 ![](https://img.shields.io/badge/language-bash-orange.svg)
-![](https://img.shields.io/badge/version-0.3-black.svg)
+![](https://img.shields.io/badge/version-0.6-black.svg)
 
 ### 环境
 * 树莓派 Raspberry Pi
