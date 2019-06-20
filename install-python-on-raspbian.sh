@@ -19,7 +19,7 @@ sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev lib
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
 tar -xf Python-3.7.3.tar.xz
 cd Python-3.7.3
-./configure --enable-optimizations
+./configure
 make -j 4
 sudo make altinstall
 cd ..
@@ -33,7 +33,6 @@ sudo ln -s /usr/local/bin/python3.7 /usr/bin/python
 sudo ln -s /usr/local/bin/pip3.7 /usr/bin/pip
 
 # Install Python Module
-sudo apt-get install python-pip python-lxml python-crypto python-cssselect python-openssl python-w3lib python-twisted python-dev libxml2-dev libxslt1-dev libjpeg-dev -y
 sudo apt-get install chromium-browser chromium-chromedriver -y
 sudo pip install --upgrade pip
 sudo pip install scrapy
