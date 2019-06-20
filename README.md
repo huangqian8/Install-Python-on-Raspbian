@@ -1,10 +1,16 @@
 # Install-Python-on-Raspbian
 ![](https://img.shields.io/badge/language-bash-orange.svg)
 
-### 功能
-* 在树莓派官方系统 Raspbian 上安装 Python 3.7.3
+### 环境
+* 树莓派 Raspberry Pi
+* Raspbian
 
-* 安装第三方模块
+### 功能
+* 中文化
+
+* 安装 Python 3.7.3
+
+* 安装 Python 第三方模块
   - [x] scrapy
     - [x] scrapy-deltafetch
   - [x] requests
@@ -22,3 +28,7 @@
 ```
 bash <(curl -L -s https://git.io/fjVM9)
 ```
+
+### 常见问题
+* 请使用 root 权限用户运行此脚本。
+* Python 3.7.3 编译使用 `--enable-optimizations` 参数，因此颇为耗时。
