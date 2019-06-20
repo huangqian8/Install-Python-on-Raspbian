@@ -15,7 +15,7 @@ EOF
 
 # Install Python 3.7.3
 sudo apt-get update -y
-sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
+sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev libxml2-dev libxslt1-dev libjpeg-dev -y
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
 tar -xf Python-3.7.3.tar.xz
 cd Python-3.7.3
@@ -41,7 +41,6 @@ sudo pip install scrapy
 sudo pip install requests
 sudo pip install pycryptodome
 sudo pip install fake-useragent
-sudo pip install lxml
 sudo pip install Pillow
 sudo pip install selenium
 sudo pip install rsa
@@ -62,7 +61,7 @@ cd /usr/local/src
 sudo wget https://files.pythonhosted.org/packages/e9/fc/ebfbd4de236b493f9ece156f816c21df0ae87ccc22604c5f9b664efef1b9/bsddb3-6.2.6.tar.gz
 sudo tar -zxf bsddb3-6.2.6.tar.gz
 cd bsddb3-6.2.6
-sudo python3 setup.py install --berkeley-db=/usr/local/berkeleydb
+sudo python setup.py install --berkeley-db=/usr/local/berkeleydb
 sudo pip install scrapy-deltafetch
 
 # Chinese
