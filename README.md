@@ -3,7 +3,7 @@
 
 ### 环境
 * 树莓派 Raspberry Pi
-* Raspbian
+* 2019-04-08-raspbian-stretch-lite
 
 ### 功能
 * 中文化
