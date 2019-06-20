@@ -1,6 +1,6 @@
 # Install-Python-on-Raspbian
 ![](https://img.shields.io/badge/language-bash-orange.svg)
-![](https://img.shields.io/badge/version-0.2-black.svg)
+![](https://img.shields.io/badge/version-0.3-black.svg)
 
 ### 环境
 * 树莓派 Raspberry Pi
@@ -32,4 +32,4 @@ bash <(curl -L -s https://git.io/fjVM9)
 
 ### 常见问题
 * 请使用 root 权限用户运行此脚本。
-* Python 3.7.3 编译使用 `--enable-optimizations` 参数，因此颇为耗时。
+* ~~Python 3.7.3 编译使用 `--enable-optimizations` 参数，因此颇为耗时。~~
