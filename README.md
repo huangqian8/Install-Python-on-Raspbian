@@ -1,13 +1,12 @@
 # Install-Python-on-Raspbian
 ![](https://img.shields.io/badge/language-bash-orange.svg)
+![](https://img.shields.io/badge/version-0.2-black.svg)
 
 ### 环境
 * 树莓派 Raspberry Pi
 * 2019-04-08-raspbian-stretch-lite
 
 ### 功能
-* 中文化
-
 * 安装 Python 3.7.3
 
 * 安装 Python 第三方模块
@@ -23,6 +22,8 @@
   - [x] Crypto
 
 * 删除自带的 Python 2.7 和 3.5
+
+* 中文化
 
 ### 运行（root）
 ```
