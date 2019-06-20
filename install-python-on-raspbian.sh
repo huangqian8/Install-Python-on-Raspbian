@@ -26,23 +26,26 @@ cd ..
 sudo rm -rf Python-3.7.3
 python3.7 -V
 
-# Remove Python 3.5
+# Remove Python 2.7 & 3.5
+sudo apt-get autoremove python2.7 -y
 sudo apt-get autoremove python3.5 -y
-sudo ln -s /usr/local/bin/python3.7 /usr/bin/python3
-sudo ln -s /usr/local/bin/pip3.7 /usr/bin/pip3
+sudo apt-get autoremove -y
+sudo apt-get clean
+sudo ln -s /usr/local/bin/python3.7 /usr/bin/python
+sudo ln -s /usr/local/bin/pip3.7 /usr/bin/pip
 
 # Install Python Module
 sudo apt-get install chromium-browser chromium-chromedriver -y
-sudo pip3 install --upgrade pip
-sudo pip3 install scrapy
-sudo pip3 install requests
-sudo pip3 install pycryptodome
-sudo pip3 install fake-useragent
-sudo pip3 install lxml
-sudo pip3 install Pillow
-sudo pip3 install selenium
-sudo pip3 install rsa
-sudo pip3 install Crypto
+sudo pip install --upgrade pip
+sudo pip install scrapy
+sudo pip install requests
+sudo pip install pycryptodome
+sudo pip install fake-useragent
+sudo pip install lxml
+sudo pip install Pillow
+sudo pip install selenium
+sudo pip install rsa
+sudo pip install Crypto
 
 # Install scrapy-deltafetch
 cd /usr/local/src
@@ -60,7 +63,7 @@ sudo wget https://files.pythonhosted.org/packages/e9/fc/ebfbd4de236b493f9ece156f
 sudo tar -zxf bsddb3-6.2.6.tar.gz
 cd bsddb3-6.2.6
 sudo python3 setup.py install --berkeley-db=/usr/local/berkeleydb
-sudo pip3 install scrapy-deltafetch
+sudo pip install scrapy-deltafetch
 
 # Chinese
 sudo apt-get install ttf-wqy-zenhei -y
