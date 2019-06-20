@@ -13,13 +13,8 @@ sudo bash -c "cat > /etc/apt/sources.list.d/raspi.list" <<EOF
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ stretch main
 EOF
 
-# Chinese
-sudo apt-get update -y
-sudo apt-get install ttf-wqy-zenhei -y
-sudo apt-get install scim-pinyin -y
-sudo raspi-config
-
 # Install Python 3.7.3
+sudo apt-get update -y
 sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
 tar -xf Python-3.7.3.tar.xz
@@ -68,6 +63,11 @@ sudo tar -zxf bsddb3-6.2.6.tar.gz
 cd bsddb3-6.2.6
 sudo python setup.py install --berkeley-db=/usr/local/berkeleydb
 sudo pip install scrapy-deltafetch
+
+# Chinese
+sudo apt-get install ttf-wqy-zenhei -y
+sudo apt-get install scim-pinyin -y
+sudo raspi-config
 
 # Reboot
 sudo reboot
