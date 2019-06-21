@@ -1,12 +1,14 @@
 # Install-Python-on-Raspbian
 ![](https://img.shields.io/badge/language-bash-orange.svg)
-![](https://img.shields.io/badge/version-0.6-black.svg)
+![](https://img.shields.io/badge/version-0.7-black.svg)
 
 ### 环境
 * 树莓派 Raspberry Pi
 * 2019-04-08-raspbian-stretch-lite
 
 ### 功能
+* 安装 Git
+
 * 安装 Python 3.7.3
 
 * 安装 Python 第三方模块
@@ -15,7 +17,6 @@
   - [x] requests
   - [x] pycryptodome
   - [x] fake-useragent
-  - [x] lxml
   - [x] Pillow
   - [x] selenium
   - [x] rsa
